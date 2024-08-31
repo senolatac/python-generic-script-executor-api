@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  svc-python-app:
+    build:
+      dockerfile: Dockerfile
+    container_name: cn-script-executor
+    image: script-executor-image
+    hostname: script-executor
+    environment:
+      SECURE_KEY_TOKEN: 'user,pass'
+    ports:
+      - "9595:8080"
