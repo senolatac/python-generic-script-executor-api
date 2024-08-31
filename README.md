@@ -1,6 +1,9 @@
 # python-generic-script-executor-api
 Send script as parameter and get results.
 
+#### Access Swagger
+- http://localhost:9595/docs
+
 #### Example Request
 - Execute Example
 ```
