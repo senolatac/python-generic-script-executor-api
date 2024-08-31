@@ -2,3 +2,4 @@
 .pytest_cache
 .env
 .DS_STORE
+/python-generic-script-executor-api.iml
