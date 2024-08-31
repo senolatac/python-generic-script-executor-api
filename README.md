@@ -35,3 +35,6 @@ docker push satac/python-script-executor:v1
 ```shell
 docker pull satac/python-script-executor:v1
 ```
+
+#### References
+- https://stackoverflow.com/questions/9672791/how-to-safely-use-exec-in-python
