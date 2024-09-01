@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-generic-script-executor-api"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = ["Senol Atac"]
 readme = "README.md"

@@ -77,6 +77,14 @@ docker push satac/python-script-executor:v1
 docker pull satac/python-script-executor:v1
 ```
 
+### Docker Environment Variables
+```properties
+TITLE='Python Script Executor'
+VERSION='0.0.1'
+APP_ENV=prod
+APP_USERNAME_AND_PASSWORD=user,pass
+```
+
 #### References
 - https://stackoverflow.com/questions/9672791/how-to-safely-use-exec-in-python
 - https://realpython.com/python-eval-function/

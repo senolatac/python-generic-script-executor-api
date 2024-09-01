@@ -14,7 +14,7 @@ class AppSettings(BaseAppSettings):
     version: str = "0.0.0"
 
     admin_key_token: str = "admin"
-    secure_key_token: str = "user,pass"
+    app_username_and_password: str = "user,pass"
 
     logging_level: int = logging.DEBUG
 

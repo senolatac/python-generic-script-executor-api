@@ -9,15 +9,15 @@ from app.model.security_user import SecurityUser
 security = HTTPBasic()
 settings = get_app_settings()
 
-SECURE_KEY_TOKEN = settings.secure_key_token
+APP_USERNAME_AND_PASSWORD = settings.app_username_and_password
 ADMIN_KEY_TOKEN = settings.admin_key_token
 USER = "USER"
 ADMIN = "ADMIN"
 
 
 def get_current_active_user(credentials: HTTPBasicCredentials = Depends(security)):
-    if SECURE_KEY_TOKEN:
-        keys = SECURE_KEY_TOKEN.split(",")
+    if APP_USERNAME_AND_PASSWORD:
+        keys = APP_USERNAME_AND_PASSWORD.split(",")
 
         if len(keys) > 1:
             correct_username = secrets.compare_digest(credentials.username, keys[0])

@@ -8,6 +8,9 @@ services:
     image: script-executor-image
     hostname: script-executor
     environment:
-      SECURE_KEY_TOKEN: 'user,pass'
+      TITLE: 'Python Script Executor'
+      VERSION: '0.0.1'
+      APP_ENV: prod
+      APP_USERNAME_AND_PASSWORD: 'user,pass'
     ports:
       - "9595:8080"
